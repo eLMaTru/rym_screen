@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A fully featured admin theme which can be used to build CRM, CMS, etc."
+    />
+    <meta name="author" content="Coderthemes" />
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <title>infoScreen</title>
+
+    <!-- App css -->
+    <link
+      href="assets/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet" />
+    <link
+      href="assets/plugins/animate/animate.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Play&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="assets/css/dreams.css" rel="stylesheet" type="text/css" />
+
+
+    <style>
+      .ball {
+        border-radius: 999px !important;
+        width: 5.3em;
+        height: 5.3em;
+        line-height: 0.8 !important;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.14),
+          0 4px 14px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .btn {
+        padding: unset;
+      }
+
+      .btn-warning {
+        background-color: #f8c038 !important;
+        border: 1px solid #f8c038 !important;
+      }
+
+      .btn-info {
+        background-color: #2abfcc !important;
+        border: 1px solid #2abfcc !important;
+      }
+
+      .btn-danger {
+        background-color: #f53e4e !important;
+        border: 1px solid #f53e4e !important;
+      }
+
+      .margin-right-ball {
+        margin-right: 12px;
+      }
+
+      hr {
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
+
+      hr.style13 {
+        height: 5px;
+        border: 0;
+        box-shadow: 0 10px 10px -10px #8c8b8b4d inset;
+      }
+
+      .ball-number {
+        font-size: 3.5em;
+        font-weight: bolder;
+        text-shadow: 1px 1px 2px #0006, 0 0 25px #0003, 0 0 5px #747272;
+      }
+
+      #kino {
+        display: none;
+      }
+
+      .container {
+        width: 99% !important;
+      }
+
+      .wrapper {
+        padding-top: 5px !important;
+      }
+
+      .panel-color .panel-title {
+        text-shadow: 1px 1px 2px #0006, 0 0 25px #0003, 0 0 5px #747272;
+      }
+
+      .advise_divider {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      /* Make it a marquee */
+      .marquee {
+        margin: 0 auto;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        animation: marquee 50s linear infinite;
+        margin-top: 5px;
+        width: 98%;
+        text-align: center;
+      }
+
+      .marquee:hover {
+        animation-play-state: paused;
+      }
+
+      .marquee-row {
+        margin-left: 1px;
+        margin-right: 1px;
+        margin-top: 5em;
+        background-color: #ffffff;
+        height: 40px;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      .marquee-fa {
+        display: inline;
+      }
+
+      /* Make it move */
+      @keyframes marquee {
+        0% {
+          text-indent: 75em;
+        }
+
+        100% {
+          text-indent: -150em;
+        }
+      }
+
+      .text-white {
+        font-size: 33px;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .btn-warning {
+        border-width: 2px !important;
+      }
+
+      .updated-results {
+        background-color: #1aa52c !important;
+      }
+
+      .price {
+        font-weight: bold;
+        /**font-size: 14px;*/
+      }
+
+      .card_info {
+        font-size: 11px !important;
+      }
+
+     .card_info_solteo {
+        font-size: 15px;
+      }
+
+      #kino_card-box {
+        margin-bottom: 1px;
+      }
+
+      .custom-table {
+        font-size: 12px;
+      }
+
+
+      #banca-logo {
+        border-bottom-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+      }
+
+      .panel {
+        border-bottom-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+      }
+
+      .Center1 {
+        width: 200px;
+        height: 200px;
+        position: fixed;
+        background-color: blue;
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -100px;
+      }
+
+      .btn {
+        font-size: 40%;
+      }
+
+      .panel-title {
+        font-size: 12px;
+      }
+
+      .panel-heading {
+        padding: 5px 20px;
+      }
+
+      .card-box {
+        padding: 10px;
+      }
+
+      .td_size{
+         font-size: 14px;
+      }
+
+        .td_size_price{
+         font-size: 20px;
+      }
+      
+      .td_size i{
+        margin-top: 10px;
+      }
+       .td_size span{
+        margin-top: 10px;
+      }
+
+      .custom-table_dream{
+        font-size:15px;
+      }
+
+      .div_img_resposive{
+      	   
+    height: 50px;
+      }
+
+      .carousel-indicators {
+        display: none;
+        }
+
+    </style>
+
+    <script src="assets/js/modernizr.min.js"></script>
+  </head>
+
+  <body style="background-color: #ccd1d1 !important; overflow: hidden;">
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <!-- end col -->
+
+          <div class="col-lg-9" id="ads-div">
+            <div
+              id="carousel-example-captions"
+              data-ride="carousel"
+              class="carousel slide"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carousel-example-captions"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carousel-example-captions"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carousel-example-captions"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+
+              <div role="listbox" class="carousel-inner" id="advertisement-div">
+                <div class="item active">
+                  <!-- inicio del primer carrucel  -->
+
+                  <div
+                    class="widget-box-two"
+                    style="width: 32%;float: left;margin-right: 2%;"
+                  >
+                    <div class="wigdet-two-content">
+                      <div
+                        class="panel panel-color panel-warning"
+                        id="currency-div"
+                      >
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                          <h3 class="panel-title">
+                            <i class="fa fa-money"></i> Divisa
+                          </h3>
+                        </div>
+
+                        <!-- Table -->
+                        <table class="table table-striped custom-table ">
+                          <thead>
+                            <tr>
+                              <th>Moneda</th>
+                              <th class="text-center">Tasa de hoy</th>
+                              <th class="text-center">Variación</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class='td_size'><i class="fa fa-usd "></i> - DOLLAR</td>
+                              <td id="dollar_tdp" class="text-center td_size_price">...</td>
+                              <td id="dollar_ydp" class="text-center td_size">...</td>
+                            </tr>
+                            <tr>
+                              <td  class='td_size'><i class="fa fa-eur"></i> - EURO</td>
+                              <td id="euro_tdp" class="text-center td_size_price">...</td>
+                              <td id="euro_ydp" class="text-center td_size">...</td>
+                            </tr>
+                           <!-- <tr>
+                              <td><b>G</b> - GOURDE</td>
+                              <td id="gourde_tdp" class="text-center">...</td>
+                              <td id="gourde_ydp" class="text-center">...</td>
+                            </tr>-->
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="widget-box-two" style="width: 66%;float: left;">
+                    <div class="wigdet-two-content">
+                      <div class="panel panel-color panel-warning">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">
+                          <h3 class="panel-title" id="panel_fuel_title">...</h3>
+                        </div>
+
+                        <!-- Table -->
+                        <table class="table table-striped custom-table ">
+                          <thead>
+                            <tr>
+                              <th>Tipo</th>
+                              <th>Precio</th>
+                              <th>Variación</th>
+
+                              <th>Tipo</th>
+                              <th>Precio</th>
+                              <th>Variación</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td  class="td_size">
+                                <i
+                                  class="mdi mdi-gas-station mdi-16px"
+                                  style="color: goldenrod;"
+                                ></i>
+                                Gasolina Premium
+                              </td>
+                              <td id="g_premium" class="price td_size_price">...</td>
+                              <td class="td_size" id="g_premium_diferent">...</td>
+                              <td  class="td_size">
+                                <i
+                                  class="mdi mdi-gas-station mdi-16px"
+                                  style="color: firebrick;"
+                                ></i>
+                                Gasolina Regular
+                              </td>
+                              <td id="g_regular" class="price td_size_price">...</td>
+                              <td class="td_size" id="g_regular_diferent">..</td>
+                            </tr>
+                           <!-- <tr>
+                              <td>
+                                <i
+                                  class="mdi mdi-gas-station mdi-16px"
+                                  style="color: goldenrod;"
+                                ></i>
+                                Gasoil Optimo
+                              </td>
+                              <td id="gsl_optimo" class="price">...</td>
+                              <td id="gsl_optimo_diferent">...</td>
+
+                              <td>
+                                <i
+                                  class="mdi mdi-gas-station mdi-16px"
+                                  style="color: firebrick;"
+                                ></i>
+                                Gasoil Regular
+                              </td>
+                              <td id="gsl_regular" class="price">...</td>
+                              <td id="gsl_regular_diferent">..</td>
+                            </tr>-->
+                            <tr>
+                              <td  class="td_size"">
+                                <i
+                                  class="mdi mdi-gas-station mdi-16px"
+                                  style="color: green;"
+                                ></i>
+                                Gas Licuado
+                              </td>
+                              <td id="glp" class="price td_size_price" >...</td>
+                              <td class="td_size" id="glp_diferent">...</td>
+
+                              <td class="td_size">
+                                <i
+                                  class="mdi mdi-gas-station mdi-16px"
+                                  style="color: green;"
+                                ></i>
+                                Gas Natural
+                              </td>
+                              <td id="gn" class="price td_size_price">...</td>
+                              <td class="td_size" id="gn_diferent">...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- fin del primer carrucel  -->
+
+
+              </div>
+            </div>
+            <!-- fin del carrucel -->
+          </div>
+
+          <div class="col-lg-3">
+            <div class="widget-box-two">
+              <div class="wigdet-two-content">
+                <div class="panel panel-color panel-warning" id="banca-logo">
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">
+                    <h3 class="panel-title">
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-calendar m-r-5"
+                          style="color: #042f2fd1;"
+                        ></i>
+                        <span id="date">...</span>
+                      </span>
+
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-clock-o m-r-5"
+                          style="color: #042f2fd1; margin-left: 2px;"
+                        ></i>
+                        <span id="clock">...</span>
+                      </span>
+                    </h3>
+                  </div>
+
+                  <div class="row" style="margin-top: 10px;">
+                    <div class="col-md-6 col-lg-12">
+                      <img style="margin-top: 20px;"
+                        src="assets/images/lottery/banca-logo.png"
+                        class="img-responsive"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+
+        <div id="not_kino">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="card-box widget-box-two">
+                <div class="wigdet-two-content">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 div_img_resposive" >
+                      <img
+                        src="assets/images/lottery/la primera.png"
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="col-md-6 col-lg-8 card_info">
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-calendar m-r-5"
+                          style="color: teal;"
+                        ></i>
+                        <span id="date_6">...</span>
+                      </span>
+                      <br />
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i class="fa fa-sun-o m-r-5" style="color: gold;"></i>
+                        <span class="card_info_solteo">Sorteo 12:00 PM</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="style13" />
+
+                <div class="wigdet-two-content text-white">
+                  <span id="card_6">
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button type="button" class="btn btn-warning ball">
+                      <span class="ball-number">...</span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card-box widget-box-two">
+                <div class="wigdet-two-content">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 div_img_resposive">
+                      <img
+                        src="assets/images/lottery/ny.png"
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="col-md-6 col-lg-8 card_info">
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-calendar m-r-5"
+                          style="color: teal;"
+                        ></i>
+                        <span id="date_1">...</span>
+                      </span>
+                      <br />
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i class="fa fa-sun-o m-r-5" style="color: gold;"></i>
+                        <span class="card_info_solteo">Sorteo 12:30 PM</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="style13" />
+
+                <div class="wigdet-two-content text-white">
+                  <span id="card_1">
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button type="button" class="btn btn-warning ball">
+                      <span class="ball-number">...</span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card-box widget-box-two">
+                <div class="wigdet-two-content">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 div_img_resposive">
+                      <img
+                        src="assets/images/lottery/loteriareal.png"
+                        class="img-responsive"
+                         
+                      />
+                    </div>
+                    <div class="col-md-6 col-lg-8 card_info">
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-calendar m-r-5"
+                          style="color: teal;"
+                        ></i>
+                        <span id="date_2">...</span>
+                      </span>
+                      <br />
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i class="fa fa-sun-o m-r-5" style="color: gold;"></i>
+                        <span class="card_info_solteo">Sorteo 12:55 PM</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="style13" />
+
+                <div class="wigdet-two-content text-white">
+                  <span id="card_2">
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button type="button" class="btn btn-warning ball">
+                      <span class="ball-number">...</span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card-box widget-box-two">
+                <div class="wigdet-two-content">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 div_img_resposive">
+                      <img
+                        src="assets/images/lottery/ganamas.png"
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="col-md-6 col-lg-8 card_info">
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <span class="m-b-5" style="margin-top: 18px;">
+                          <i
+                            class="fa fa-calendar m-r-5"
+                            style="color: teal;"
+                          ></i>
+                          <span id="date_3">...</span>
+                        </span>
+                        <br />
+                        <i class="fa fa-sun-o m-r-5" style="color: gold;"></i>
+                        <span class="card_info_solteo">Sorteo 3:00 PM</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="style13" />
+
+                <div class="wigdet-two-content text-white">
+                  <span id="card_3">
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button type="button" class="btn btn-warning ball">
+                      <span class="ball-number">...</span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="card-box widget-box-two">
+                <div class="wigdet-two-content">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 div_img_resposive">
+                      <img
+                        src="assets/images/lottery/quinielaLoteka.png"
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="col-md-6 col-lg-8 card_info">
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-calendar m-r-5"
+                          style="color: teal;"
+                        ></i>
+                        <span id="date_8">...</span>
+                      </span>
+                      <br />
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-moon-o m-r-5"
+                          style="color: cadetblue;"
+                        ></i>
+                        <span class="card_info_solteo">Sorteo 7:00 PM</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="style13" />
+
+                <div class="wigdet-two-content text-white">
+                  <span id="card_8">
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button type="button" class="btn btn-warning ball">
+                      <span class="ball-number">...</span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card-box widget-box-two">
+                <div class="wigdet-two-content">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 div_img_resposive">
+                      <img
+                        src="assets/images/lottery/ny.png"
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="col-md-6 col-lg-8 card_info">
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-calendar m-r-5"
+                          style="color: teal;"
+                        ></i>
+                        <span id="date_5">...</span>
+                      </span>
+                      <br />
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-moon-o m-r-5"
+                          style="color: cadetblue;"
+                        ></i>
+                        <span class="card_info_solteo">Sorteo 7:30 PM</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="style13" />
+
+                <div class="wigdet-two-content text-white">
+                  <span id="card_5">
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button type="button" class="btn btn-warning ball">
+                      <span class="ball-number">...</span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-3 col-md-6">
+              <div class="card-box widget-box-two">
+                <div class="wigdet-two-content">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 div_img_resposive">
+                      <img
+                        src="assets/images/lottery/quinielapale.png"
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="col-md-6 col-lg-8 card_info">
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-calendar m-r-5"
+                          style="color: teal;"
+                        ></i>
+                        <span id="date_4">...</span>
+                      </span>
+                      <br />
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-moon-o m-r-5"
+                          style="color: cadetblue;"
+                        ></i>
+                        <span class="card_info_solteo">Sorteo 8:55 PM</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="style13" />
+
+                <div class="wigdet-two-content text-white">
+                  <span id="card_4">
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button type="button" class="btn btn-warning ball">
+                      <span class="ball-number">...</span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+
+            <div class="col-lg-3 col-md-6 div_img_resposive">
+              <div class="card-box widget-box-two">
+                <div class="wigdet-two-content">
+                  <div class="row">
+                    <div class="col-md-6 col-lg-4 div_img_resposive">
+                      <img
+                        src="assets/images/lottery/loterianacional.png"
+                        class="img-responsive"
+                      />
+                    </div>
+                    <div class="col-md-6 col-lg-8 card_info">
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-calendar m-r-5"
+                          style="color: teal;"
+                        ></i>
+                        <span id="date_7">...</span>
+                      </span>
+                      <br />
+                      <span class="m-b-5" style="margin-top: 18px;">
+                        <i
+                          class="fa fa-moon-o m-r-5"
+                          style="color: cadetblue;"
+                        ></i>
+                        <span class="card_info_solteo">Sorteo 9:00 PM</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="style13" />
+
+                <div class="wigdet-two-content text-white">
+                  <span id="card_7">
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-warning ball margin-right-ball"
+                    >
+                      <span class="ball-number">...</span>
+                    </button>
+                    <button type="button" class="btn btn-warning ball">
+                      <span class="ball-number">...</span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+        </div>
+
+        <div class="row" id="kino">
+          <div class="col-lg-12 col-md-12">
+            <div class="card-box widget-box-two" id="kino_card-box">
+              <div class="wigdet-two-content">
+                <div class="row">
+                  <!--  <div class="col-md-6 col-lg-2">
+                    <img
+                      src="assets/images/lottery/dormido.jpg"
+                      style="height: 50px;"
+                    />
+                    <h3>Â¿Que soñaste?</h3>
+                  </div>-->
+                </div>
+              </div>
+
+              <hr class="style13" style="background-color: #fff; box-shadow: none;"/>
+
+              <table class="table table-bordered custom-table_dream" style="margin-bottom: 2px;">
+                <thead style="background-color: #2abfcc !important;">
+                  <tr class="thead">
+                    <th>Sueño</th>
+                    <th style="text-align: center;">Numero</th>
+                    <th>Sueño</th>
+                    <th style="text-align: center;">Numero</th>
+                    <th>Sueño</th>
+                    <th style="text-align: center;">Numero</th>
+                    <th>Sueño</th>
+                    <th style="text-align: center;">Numero</th>
+                    <th>Sueño</th>
+                    <th style="text-align: center;">Numero</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active" id="dreaming_line_1"></tr>
+                  <tr  id="dreaming_line_2"></tr>
+                  <tr class="active" id="dreaming_line_3"></tr>
+                  <tr id="dreaming_line_4"></tr>
+                  <tr class="active" id="dreaming_line_5"></tr>
+
+                  <tr id="dreaming_line_6"></tr>
+                  <tr class="active" id="dreaming_line_7"></tr>
+                  <tr id="dreaming_line_8"></tr>
+                  <tr class="active" id="dreaming_line_9"></tr>
+                  <tr id="dreaming_line_10"></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- end col -->
+        </div>
+        <!-- end row -->
+
+        <div class="row marquee-row">
+          <div class="marquee" id="marquee-div">
+            <!-- La animacion de las bolas afecta de manera ligera la animacion del marquee. Corregirlo. -->
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center">
+          <hr />
+          <span>© 2016 - 2020 Horizon High Tech.</span>
+
+          <i class="fa fa-instagram" style="color: lightcoral;"></i>
+          <span style="color: gray;">@horizon_high_tech</span>
+        </div>
+        <!-- End Footer -->
+      </div>
+      <!-- end container -->
+    </div>
+    <!-- end wrapper -->
+
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/jquery.blockUI.js"></script>
+    <script src="assets/js/waves.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+   <!-- <script src="../plugins/switchery/switchery.min.js"></script> -->
+
+    <!-- jQuery  -->
+    <!-- <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script> -->
+
+    <script src="assets/plugins/moment/moment.js"></script>
+
+    <!-- App js -->
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="assets/js/jquery.core.js"></script>
+    <script src="assets/js/jquery.app.js"></script>
+
+
+    <script>
+      var showingKino = false;
+      var counter = 0;
+
+      function animateBall() {
+        var balls = $(document).find(".ball");
+        var numbers = $(document).find(".ball-number");
+
+        var random = Math.floor(Math.random() * balls.length);
+
+        $(balls[random]).addClass("animated rubberBand");
+        $(numbers[random]).addClass("animated flash");
+
+        $(balls[random]).one(
+          "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+          function() {
+            $(balls[random]).removeClass("animated rubberBand");
+          }
+        );
+
+        $(numbers[random]).one(
+          "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",
+          function() {
+            $(numbers[random]).removeClass("animated flash");
+          }
+        );
+        setTimeout(animateBall, 5000);
+      }
+
+      function loadDateAndTime() {
+        var dt = new Date();
+        var hour = dt.getHours();
+        var minute = dt.getMinutes();
+        var second = dt.getSeconds();
+        var period = hour >= 12 ? "PM" : "AM";
+        if (period == "PM" && hour >= 13) {
+          hour -= 12;
+        }
+
+        minute = minute <= 9 ? "0" + minute : minute;
+        second = second <= 9 ? "0" + second : second;
+
+        if (second > 0 && second % 15 == 0 && !showingKino) {
+          $("#not_kino").fadeOut(1000, function() {
+            $(".marquee-row").css("margin-top", "0.5em");
+            $(".card-box").css("padding-top", "1px");
+            $(".card-box").css("padding-bottom", "10px");
+            $("#kino").fadeIn(1000);
+            showingKino = true;
+          });
+        }
+
+        if (second > 0 && second % 30 == 0 && showingKino) {
+          $("#kino").fadeOut(1000, function() {
+            $(".marquee-row").css("margin-top", "5em");
+            $(".card-box").css("padding-top", "10px");
+            $(".card-box").css("padding-bottom", "10px");
+            $("#not_kino").fadeIn(1000);
+            showingKino = false;
+          });
+        }
+
+        if (second > 0 && second % 45 == 0 && !showingKino) {
+          $("#not_kino").fadeOut(1000, function() {
+            $(".marquee-row").css("margin-top", "0.5em");
+            $(".card-box").css("padding-top", "1px");
+            $(".card-box").css("padding-bottom", "10px");
+            $("#kino").fadeIn(1000);
+            showingKino = true;
+          });
+        }
+
+        if (second > 0 && second % 59 == 0 && showingKino) {
+          $("#kino").fadeOut(1000, function() {
+            $(".marquee-row").css("margin-top", "5em");
+            $(".card-box").css("padding-top", "10px");
+            $(".card-box").css("padding-bottom", "10px");
+            $("#not_kino").fadeIn(1000);
+            showingKino = false;
+          });
+        }
+
+        var time = hour + ":" + minute + ":" + second + " " + period;
+        var strDate = translateDateToSpanish(dt.toDateString(), " ");
+        counter++;
+        $("#date").html(strDate);
+        $("#clock").html(time);
+        setTimeout(loadDateAndTime, 1000);
+        if (counter == 75) {
+          counter = 0;
+          displayOldsResultsView();
+        }
+      }
+
+      function displayOldsResultsView() {
+        var url = "/old-lottery-results.html?token=" + getUrlValue("token");
+        window.open(url, (target = "_self"));
+      }
+
+      $(document).ready(function() {
+        $("#banca-logo").css("height", $("#currency-div").height());
+        loadDateAndTime();
+        animateBall();
+        updateResults();
+        loadDreams();
+        updateFuelPrices();
+        updateCurrencyPrices();
+        updateAdvertisements(504);
+      });
+
+    function getUrlValue(varName) {
+          var split = $(location).attr('href').split('?');
+          var value = '';
+          if (split.length == 2) {
+              split = split[1].split('&');
+              for (var i = 0; i < split.length; i+=1) {
+                  var keyValue = split[i].split('=');
+                  if (keyValue.length == 2 && keyValue[0] == varName) {
+                      value = keyValue[1];
+                      break;
+                  }
+              }
+          }
+          return value;
+      }
+
+      function verifyTokenLocal(){
+        debugger;
+        console.log('verifying token ...');
+        if (getUrlValue("token") == ""){
+         var url = "/disabled-token.html";
+         //window.open(url, (target = "_self"));
+        }
+      }
+
+      verifyTokenLocal();
+
+
+    </script>
+  </body>
+  <script src="assets/js/tokenapi.js"></script>
+  <script src="assets/js/hoursApi.js"></script>
+  <script src="assets/js/consumeapi.js"></script>
+  <script src="assets/js/dreams.js"></script>
+  <script src="assets/js/fuel.js"></script>
+  <script src="assets/js/currency.js"></script>
+  <script src="assets/js/advertisements.js"></script>
+</html>

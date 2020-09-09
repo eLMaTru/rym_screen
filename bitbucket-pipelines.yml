@@ -1,0 +1,42 @@
+# Description: r&m-screen pipeline
+# Author: Jorge de Los Santos
+# Version: 1.0
+# Since: 09-09-2020
+
+image: python:3.7.2
+
+pipelines:
+  default:
+    - step:
+        name: Pre Install
+        script:
+          - echo Running Pre Install stage ...
+          - python --version
+    - step:
+        name: Validation
+        script:
+          - echo Running Validation stage ...
+          - python $BITBUCKET_CLONE_DIR/scripts/validation/validation.py $BITBUCKET_CLONE_DIR
+          - echo Validation stage completed successful!
+
+    - step:
+        name: Build artifact
+        script:
+          - echo Running Build artifact stage ...
+        artifacts:
+          - $BITBUCKET_CLONE_DIR/*
+    - step:
+        name: Deploy to S3
+        deployment: production
+        script:
+          - echo Starting Deploy to S3 ...
+          - pipe: atlassian/aws-s3-deploy:0.3.8
+            variables:
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+              AWS_DEFAULT_REGION: "us-east-1"
+              S3_BUCKET: "r-m-screen"
+              LOCAL_PATH: $BITBUCKET_CLONE_DIR
+              ACL: "public-read"
+          - echo Pipeline execution finished successful
+          - echo Visit http://r-m-screen.s3-website-us-east-1.amazonaws.com/old-lottery-results.html to see applied changes

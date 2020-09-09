@@ -1,0 +1,21 @@
+.dream_number {
+  font-size: 102%;
+  text-align: center;
+  color: #2abfcc;
+  text-shadow: 1px 1px 2px rgba(185, 177, 177, 0.4), 0 0 25px #0003,
+    0 0 5px #a0a1a0;
+}
+
+.dream_meaning {
+  font-size: 102%;
+  font-weight: bold;
+}
+
+.thead {
+  color: #fff;
+}
+
+.thead th {
+  font-size: 80%;
+  text-shadow: 1px 1px 2px #0006, 0 0 25px #0003, 0 0 5px #a0a1a0;
+}
