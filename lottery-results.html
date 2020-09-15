@@ -1093,7 +1093,7 @@
         $("#date").html(strDate);
         $("#clock").html(time);
         setTimeout(loadDateAndTime, 1000);
-        if (counter == 75) {
+        if (counter == 100) {
           counter = 0;
           displayOldsResultsView();
         }
@@ -1101,7 +1101,7 @@
 
       function displayOldsResultsView() {
         var url = "/old-lottery-results.html?token=" + getUrlValue("token");
-        window.open(url, (target = "_self"));
+        //window.open(url, (target = "_self"));
       }
 
       $(document).ready(function() {
@@ -1136,7 +1136,7 @@
         console.log('verifying token ...');
         if (getUrlValue("token") == ""){
          var url = "/disabled-token.html";
-         //window.open(url, (target = "_self"));
+           window.open(url, (target = "_self"));
         }
       }
 
