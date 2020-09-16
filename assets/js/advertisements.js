@@ -31,6 +31,7 @@ function getAllEnabledAdvertisementsByConsortiumId(consortium_id) {
     var endpoint =
         "http://34.198.173.130/banca-online/v1/general/consortium/" + consortium_id + "/advertisements?statusId=1";
 
+
     $.ajax({
         url: endpoint
     }).then(function (data) {
@@ -48,7 +49,10 @@ function fillConsortiumAdvertisements() {
 
         for (var i = 0; i <= itemsLength; i++) {
             advertisements = Object.values(advertisements);
-            var advertisement = JSON.parse(advertisements[i]);
+            if (advertisements[i] != null){
+                var advertisement = JSON.parse(advertisements[i]);
+
+
             if (advertisement.advertisementTypeId == 1) {
                 var html = carousel_item;
                 html = html.replace('image_url', advertisement.imageUrl);
@@ -60,6 +64,8 @@ function fillConsortiumAdvertisements() {
             } else {
                 console.log('invalid advertisement');
             }
+            }
+            
         }
     }
 
