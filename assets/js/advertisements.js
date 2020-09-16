@@ -49,8 +49,12 @@ function fillConsortiumAdvertisements() {
 
         for (var i = 0; i <= itemsLength; i++) {
             advertisements = Object.values(advertisements);
-            if (advertisements[i] != null){
-                var advertisement = JSON.parse(advertisements[i]);
+
+            if (advertisements == null) {
+                continue;
+            }
+
+            var advertisement = JSON.parse(advertisements[i]);
 
 
             if (advertisement.advertisementTypeId == 1) {
@@ -64,8 +68,6 @@ function fillConsortiumAdvertisements() {
             } else {
                 console.log('invalid advertisement');
             }
-            }
-            
         }
     }
 
