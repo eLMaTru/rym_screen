@@ -50,7 +50,7 @@ function fillConsortiumAdvertisements() {
         for (var i = 0; i <= itemsLength; i++) {
             advertisements = Object.values(advertisements);
 
-            if (advertisements == null) {
+            if (advertisements[i] == null) {
                 continue;
             }
 
