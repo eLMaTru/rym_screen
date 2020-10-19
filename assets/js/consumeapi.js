@@ -47,6 +47,8 @@ function getAllResultsByStatusId(status_id) {//this function logic flow is worki
       fillCard_6();
       fillCard_7();
       fillCard_8();
+      fillCard_9();
+      fillCard_10();
     }
 
   }
@@ -74,6 +76,8 @@ function requestLottery(status_id) {
     fillCard_6();
     fillCard_7();
     fillCard_8();
+    fillCard_9();
+    fillCard_10();
   });
 }
 
@@ -203,6 +207,39 @@ function fillCard_8() {
   $(date).html(formatDate(resultArray[resultArray.length - 1]));
   updateTodayResultsColor(resultArray[resultArray.length - 1], $("#card_8").find("button"));
 }
+
+function fillCard_9() {
+  var balls = $("#card_9").find("span");
+  var date = $("#date_9");
+  var result = results['FLORIDA TARDE'];
+  if (result == null) { result = '..., ..., ..., null' }
+  var resultArray = result.split(',');
+
+  $(balls[0]).html(resultArray[0]);
+  $(balls[1]).html(resultArray[1]);
+  $(balls[2]).html(resultArray[2]);
+
+  $(date).html(formatDate(resultArray[resultArray.length - 1]));
+  updateTodayResultsColor(resultArray[resultArray.length - 1], $("#card_9").find("button"));
+}
+
+
+function fillCard_10() {
+  var balls = $("#card_10").find("span");
+  var date = $("#date_10");
+  var result = results['FLORIDA NOCHE'];
+  if (result == null) { result = '..., ..., ..., null' }
+  var resultArray = result.split(',');
+
+  $(balls[0]).html(resultArray[0]);
+  $(balls[1]).html(resultArray[1]);
+  $(balls[2]).html(resultArray[2]);
+
+  $(date).html(formatDate(resultArray[resultArray.length - 1]));
+  updateTodayResultsColor(resultArray[resultArray.length - 1], $("#card_10").find("button"));
+}
+
+
 
 /**
  * This function translate a date to a more friendly user format
