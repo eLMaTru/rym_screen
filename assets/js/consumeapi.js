@@ -35,7 +35,7 @@ function getAllResultsByStatusId(status_id) {//this function logic flow is worki
   if (window.sessionStorage.getItem("consumeApi") == null) {
     requestLottery(status_id);
   } else {
-    if ((getCorrectDate() >= 12 && getCorrectDate() < 16) || (getCorrectDate() >= 19 && getCorrectDate() < 20)) {
+    if ((getCorrectDate() >= 12 && getCorrectDate() < 16) || (getCorrectDate() >= 19 && getCorrectDate() < 22)) {
       requestLottery(status_id);
     } else {
       results = JSON.parse(window.sessionStorage.getItem("consumeApi"));
